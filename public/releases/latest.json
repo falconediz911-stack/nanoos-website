@@ -1,0 +1,9 @@
+{
+  "schema_version": 1,
+  "product": "NanoOS",
+  "channel": "stable",
+  "version": "2.0.0",
+  "release_notes_url": "https://nanoosproject.org/releases",
+  "published_at": "2026-10-10T13:00:00Z",
+  "summary": "NanoOS V2 is available! Visit the official website for release information."
+}
