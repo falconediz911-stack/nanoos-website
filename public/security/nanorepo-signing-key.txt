@@ -1,0 +1,33 @@
+NanoOS Package Repository Signing Key
+=====================================
+
+This is the independently hosted fingerprint notice for the initial NanoOS
+package repository signing key. Verify this fingerprint before trusting the
+matching public key for NanoOS package or repository database signatures.
+
+User ID: NanoOS Repository Signing
+Algorithm: Ed25519
+Full OpenPGP fingerprint:
+D35A46A77EDBFD4F069B71ACB329E36F597CD358
+
+Grouped fingerprint:
+D35A 46A7 7EDB FD4F 069B 71AC B329 E36F 597C D358
+
+Long key ID: B329E36F597CD358
+Created: 2026-11-04
+Expires: 2028-11-03
+
+Public key file:
+https://github.com/falconediz911-stack/NanoRepo/blob/main/keys/nanoos-repo-signing-2026.asc
+
+Keyring package:
+nanoos-keyring
+
+IMPORTANT:
+Compare the complete fingerprint above with the fingerprint shown by GPG
+for the public key file. Do not trust the key based only on its short key ID,
+a filename, or a fingerprint copied from the same unverified download source.
+
+The corresponding private key is not published here. If this signing key is
+revoked or replaced, this notice must be updated through the official
+NanoOS website and the replacement fingerprint independently verified.
