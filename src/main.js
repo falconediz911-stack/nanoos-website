@@ -259,7 +259,7 @@ document.querySelector('#app').innerHTML = `
         <article class="edition-card edition-featured">
           <div class="edition-top">
             <span class="edition-icon">🎮</span>
-            <span class="edition-badge">ACTIVE DEVELOPMENT</span>
+            <span class="edition-badge">RELEASED</span>
           </div>
 
           <div>
@@ -454,8 +454,8 @@ document.querySelector('#app').innerHTML = `
       <div class="full-features-intro">
         <p>
           NanoOS is more than a desktop skin. These are some of the real
-          technologies, tuning work, tools, and system features being built
-          into the project.
+          technologies, tuning work, tools, and system features built into
+          NanoOS.
         </p>
       </div>
 
@@ -529,7 +529,7 @@ document.querySelector('#app').innerHTML = `
           <span class="full-feature-kicker">AUDIO</span>
           <h3>Ultra-low-latency audio tuning.</h3>
           <p>
-            NanoOS Gaming development includes low-latency audio tuning for
+            NanoOS Gaming includes low-latency audio tuning for
             systems where responsive sound matters during gaming and other
             real-time workloads.
           </p>
@@ -544,9 +544,8 @@ document.querySelector('#app').innerHTML = `
           <span class="full-feature-kicker">GPU</span>
           <h3>Gaming GPU latency tuning.</h3>
           <p>
-            The gaming stack and kernel work are designed around responsive
-            graphics workloads, with NVIDIA and AMD GPU support in the target
-            hardware stack.
+            The gaming stack and kernel are tuned for responsive graphics
+            workloads on NVIDIA, AMD and Intel GPUs.
           </p>
           <div class="full-feature-tags">
             <span>NVIDIA</span>
@@ -577,7 +576,7 @@ document.querySelector('#app').innerHTML = `
           <span class="full-feature-kicker">INSTALLER</span>
           <h3>Custom graphical installer.</h3>
           <p>
-            The NanoOS installer is being built as a guided GUI with disk
+            The NanoOS installer is a guided graphical installer with disk
             selection, installation methods, partition assignment, filesystems,
             desktop choices, kernels, themes, and system configuration.
           </p>
@@ -594,14 +593,13 @@ document.querySelector('#app').innerHTML = `
           <span class="full-feature-kicker">DESKTOP</span>
           <h3>Multiple desktop environments.</h3>
           <p>
-            NanoOS can be configured around different desktop environments and
-            window managers, including KDE Plasma, GNOME, COSMIC, XFCE,
-            Cinnamon, and Hyprland.
+            The installer sets up KDE Plasma (the default), GNOME, Hyprland,
+            XFCE and Cinnamon, on their own or side by side.
           </p>
           <div class="full-feature-tags">
             <span>KDE Plasma</span>
             <span>GNOME</span>
-            <span>COSMIC</span>
+            <span>XFCE</span>
             <span>Hyprland</span>
           </div>
         </article>
@@ -643,9 +641,9 @@ document.querySelector('#app').innerHTML = `
           <span class="full-feature-kicker">TOOLING</span>
           <h3>NanoOS system tooling.</h3>
           <p>
-            NanoOS development includes dedicated project tooling such as the
-            custom installer, NanoOS kernel work, system configuration, and
-            internal package-management experiments.
+            NanoOS ships its own tools: the graphical installer, NanoOS Welcome,
+            Control Center and GameMode apps, the NanoOS kernels and the nan
+            package helper.
           </p>
           <div class="full-feature-tags">
             <span>NanoOS tools</span>
@@ -751,7 +749,7 @@ document.querySelector('#app').innerHTML = `
           <span class="full-feature-kicker">AMD GRAPHICS</span>
           <h3>Modern AMD GPU support.</h3>
           <p>
-            NanoOS Gaming development includes AMD GPU detection and a
+            NanoOS Gaming includes AMD GPU detection and a
             performance-oriented graphics configuration for supported hardware.
           </p>
           <div class="full-feature-tags">
@@ -904,7 +902,7 @@ document.querySelector('#app').innerHTML = `
           <span>KERNEL</span>
           <h3>A kernel shaped around responsiveness.</h3>
           <p>
-            NanoOS Gaming development includes a custom Zen-based kernel
+            NanoOS Gaming ships a custom Zen-based kernel
             configuration with low-latency and gaming-oriented tuning.
           </p>
           <div class="inside-metrics">
@@ -947,13 +945,13 @@ document.querySelector('#app').innerHTML = `
           <span>DESKTOP</span>
           <h3>Choose the desktop that fits your workflow.</h3>
           <p>
-            NanoOS development supports multiple desktop environments and
-            window managers while keeping the project identity consistent.
+            KDE Plasma by default, or GNOME, Hyprland, XFCE and Cinnamon, all with
+            the same NanoOS identity.
           </p>
           <div class="inside-metrics">
             <strong>KDE Plasma</strong>
             <strong>GNOME</strong>
-            <strong>COSMIC</strong>
+            <strong>Hyprland</strong>
           </div>
         </article>
 
@@ -1027,7 +1025,7 @@ document.querySelector('#app').innerHTML = `
         <div class="requirement-item">
           <span>ARCHITECTURE</span>
           <strong>x86_64</strong>
-          <p>Current NanoOS Gaming development targets 64-bit x86 systems.</p>
+          <p>NanoOS Gaming runs on 64-bit x86 systems.</p>
         </div>
 
         <div class="requirement-item">
@@ -1045,7 +1043,7 @@ document.querySelector('#app').innerHTML = `
         <div class="requirement-item">
           <span>GRAPHICS</span>
           <strong>Linux-supported GPU</strong>
-          <p>NanoOS Gaming development includes both NVIDIA and AMD graphics support.</p>
+          <p>NVIDIA (RTX 20-series and newer), AMD and Intel graphics are supported.</p>
         </div>
       </div>
     </section>
@@ -1092,26 +1090,26 @@ document.querySelector('#app').innerHTML = `
     <section id="status" class="section status-section">
       <div class="section-heading">
         <span>STATUS</span>
-        <h2>What is being built.</h2>
+        <h2>Where NanoOS stands.</h2>
       </div>
 
       <div class="status-grid">
         <div class="status-item">
           <span class="live-dot"></span>
           <strong>Kernel</strong>
-          <small>Active development</small>
+          <small>Released</small>
         </div>
 
         <div class="status-item">
           <span class="live-dot"></span>
           <strong>Installer</strong>
-          <small>Active development</small>
+          <small>Released</small>
         </div>
 
         <div class="status-item">
           <span class="live-dot"></span>
           <strong>Gaming stack</strong>
-          <small>Active development</small>
+          <small>Released</small>
         </div>
 
         <div class="status-item">
@@ -1169,8 +1167,6 @@ document.querySelector('#app').innerHTML = `
           </div>
         </article>
       </div>
-        </article>
-      </div>
     </section>
 
     <section id="hardware" class="section hardware-section">
@@ -1221,16 +1217,17 @@ document.querySelector('#app').innerHTML = `
         <details>
           <summary>What is NanoOS Gaming?</summary>
           <p>
-            NanoOS Gaming is the gaming-focused edition currently under active
-            development.
+            NanoOS Gaming is the gaming-focused edition of NanoOS: KDE Plasma,
+            Steam, Gamescope, MangoHud, GameMode and the NanoSched kernel,
+            ready to play after installation.
           </p>
         </details>
 
         <details>
           <summary>Which desktops can NanoOS use?</summary>
           <p>
-            Current development includes desktops and window managers such as
-            KDE Plasma, GNOME, COSMIC, XFCE, Cinnamon, and Hyprland.
+            The installer offers KDE Plasma (the default), GNOME, Hyprland, XFCE
+            and Cinnamon. You can install more than one.
           </p>
         </details>
 
@@ -1426,28 +1423,85 @@ mobileMenuToggle?.addEventListener('click', () => {
   )
 })
 
+const closeMobileMenu = () => {
+  document.body.classList.remove('mobile-nav-open')
+  mobileMenuToggle?.setAttribute('aria-expanded', 'false')
+}
+
 mobileMenu?.querySelectorAll('a').forEach((link) => {
-  link.addEventListener('click', () => {
-    document.body.classList.remove('mobile-nav-open')
-    mobileMenuToggle?.setAttribute('aria-expanded', 'false')
-  })
+  link.addEventListener('click', closeMobileMenu)
 })
 
-document.querySelectorAll('.inside-tab').forEach((tab) => {
-  tab.addEventListener('click', () => {
-    const target = tab.dataset.tab
+// Close the phone menu with Escape, a tap outside it, or when the window
+// becomes wide enough for the normal top bar.
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && document.body.classList.contains('mobile-nav-open')) {
+    closeMobileMenu()
+    mobileMenuToggle?.focus()
+  }
+})
 
-    document.querySelectorAll('.inside-tab').forEach((item) => {
-      item.classList.toggle('active', item === tab)
-      item.setAttribute('aria-selected', String(item === tab))
-    })
+document.addEventListener('click', (event) => {
+  if (
+    document.body.classList.contains('mobile-nav-open') &&
+    !mobileMenu?.contains(event.target) &&
+    !mobileMenuToggle?.contains(event.target)
+  ) {
+    closeMobileMenu()
+  }
+})
 
-    document.querySelectorAll('.inside-panel').forEach((panel) => {
-      panel.classList.toggle(
-        'active',
-        panel.dataset.panel === target
-      )
-    })
+window.matchMedia('(min-width: 951px)').addEventListener('change', (event) => {
+  if (event.matches) closeMobileMenu()
+})
+
+const insideTabs = [...document.querySelectorAll('.inside-tab')]
+const insidePanels = [...document.querySelectorAll('.inside-panel')]
+
+// Wire tabs and panels together for screen readers.
+insideTabs.forEach((tab) => {
+  const panel = insidePanels.find((item) => item.dataset.panel === tab.dataset.tab)
+  tab.id = `inside-tab-${tab.dataset.tab}`
+  tab.setAttribute('aria-selected', String(tab.classList.contains('active')))
+  tab.tabIndex = tab.classList.contains('active') ? 0 : -1
+  if (panel) {
+    panel.id = `inside-panel-${tab.dataset.tab}`
+    panel.setAttribute('role', 'tabpanel')
+    panel.setAttribute('aria-labelledby', tab.id)
+    tab.setAttribute('aria-controls', panel.id)
+  }
+})
+
+const selectInsideTab = (tab, focus = false) => {
+  insideTabs.forEach((item) => {
+    const active = item === tab
+    item.classList.toggle('active', active)
+    item.setAttribute('aria-selected', String(active))
+    item.tabIndex = active ? 0 : -1
+  })
+
+  insidePanels.forEach((panel) => {
+    panel.classList.toggle('active', panel.dataset.panel === tab.dataset.tab)
+  })
+
+  if (focus) tab.focus()
+}
+
+insideTabs.forEach((tab, index) => {
+  tab.addEventListener('click', () => selectInsideTab(tab))
+
+  // Arrow keys, Home and End move between tabs (standard tab behaviour).
+  tab.addEventListener('keydown', (event) => {
+    const last = insideTabs.length - 1
+    const next =
+      event.key === 'ArrowRight' ? (index === last ? 0 : index + 1) :
+      event.key === 'ArrowLeft' ? (index === 0 ? last : index - 1) :
+      event.key === 'Home' ? 0 :
+      event.key === 'End' ? last :
+      null
+    if (next === null) return
+    event.preventDefault()
+    selectInsideTab(insideTabs[next], true)
   })
 })
 

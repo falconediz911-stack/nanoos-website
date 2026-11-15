@@ -3426,3 +3426,26 @@ html[data-theme] :focus-visible {
   outline: 2px solid var(--cyan);
   outline-offset: 3px;
 }
+
+/* ---- fixes ---------------------------------------------------------------- */
+html[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+html[data-theme="light"] {
+  color-scheme: light;
+}
+
+/* A long phone menu scrolls instead of running off short screens. */
+.mobile-nav-open .mobile-menu {
+  max-height: calc(100dvh - 100px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+/* Never show the phone menu next to the full top bar. */
+@media (min-width: 951px) {
+  body.mobile-nav-open .mobile-menu {
+    display: none;
+  }
+}
