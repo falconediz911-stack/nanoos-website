@@ -129,7 +129,7 @@ document.querySelector('#app').innerHTML = `
 
         <a
           class="hero-download-button"
-          href="https://github.com/falconediz911-stack/NanoRepo/releases/tag/iso-beta21"
+          href="https://github.com/falconediz911-stack/NanoRepo/releases/tag/iso-release"
           target="_blank"
           rel="noreferrer"
         >
@@ -435,7 +435,7 @@ document.querySelector('#app').innerHTML = `
 
         <a
           class="download-center-button download-panel-button"
-          href="https://github.com/falconediz911-stack/NanoRepo/releases/tag/iso-beta21"
+          href="https://github.com/falconediz911-stack/NanoRepo/releases/tag/iso-release"
           target="_blank"
           rel="noreferrer"
         >
@@ -997,7 +997,7 @@ document.querySelector('#app').innerHTML = `
 
           <a
             class="download-center-button"
-            href="https://github.com/falconediz911-stack/NanoRepo/releases/tag/iso-beta21"
+            href="https://github.com/falconediz911-stack/NanoRepo/releases/tag/iso-release"
             target="_blank"
             rel="noreferrer"
           >
