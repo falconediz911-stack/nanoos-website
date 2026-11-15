@@ -124,7 +124,7 @@ document.querySelector('#app').innerHTML = `
         <div class="hero-download-copy">
           <span class="panel-kicker">READY TO EXPLORE</span>
           <strong>Get NanoOS.</strong>
-          <span>Beta 21 • x86_64 • NanoOS Gaming</span>
+          <span>x86_64 • NanoOS Gaming</span>
         </div>
 
         <a
@@ -408,29 +408,29 @@ document.querySelector('#app').innerHTML = `
         </h2>
 
         <p>
-          NanoOS Gaming Beta 21 is out. It is a beta: test it in a virtual
-          machine or back up your data before installing on real hardware.
+          NanoOS Gaming is out. Back up your data before installing it next
+          to another operating system.
         </p>
       </div>
 
       <div class="download-panel">
         <div>
-          <span class="panel-kicker">LATEST RELEASE · BETA 21</span>
+          <span class="panel-kicker">LATEST RELEASE</span>
           <h3>NanoOS Gaming</h3>
           <p>
             Downloads come from GitHub in parts (GitHub limits files to
-            2 GB). Download every part and SHA256SUMS, then join them:
+            2 GB). Download every part and SHA256SUMS, check them, then join them:
           </p>
           <div class="download-help">
-            <code>cat nanoos-gaming-*.iso.part-* &gt; nanoos-gaming-beta21.iso</code>
             <code>sha256sum -c SHA256SUMS --ignore-missing</code>
+            <code>cat nanoos-gaming-*.iso.part-* &gt; nanoos-gaming.iso</code>
           </div>
         </div>
 
         <div class="download-meta">
           <span>Arch Linux based</span>
           <span>x86_64</span>
-          <span>Beta 21</span>
+          <span>KDE Plasma</span>
         </div>
 
         <a
@@ -985,14 +985,14 @@ document.querySelector('#app').innerHTML = `
             <span class="panel-kicker">LATEST RELEASE</span>
             <h3>NanoOS Gaming</h3>
             <p>
-              The current development ISO for x86_64 systems.
+              The NanoOS Gaming ISO for x86_64 systems.
             </p>
           </div>
 
           <div class="download-center-meta">
-            <span>Beta 21</span>
             <span>x86_64</span>
-            <span>Beta</span>
+            <span>KDE Plasma</span>
+            <span>UEFI + BIOS</span>
           </div>
 
           <a
@@ -1060,7 +1060,7 @@ document.querySelector('#app').innerHTML = `
         <article class="guide-step">
           <span>01</span>
           <h3>Download</h3>
-          <p>Download the Beta 21 parts from GitHub and join them into one ISO.</p>
+          <p>Download the parts from GitHub and join them into one ISO.</p>
         </article>
 
         <article class="guide-step">
@@ -1132,7 +1132,7 @@ document.querySelector('#app').innerHTML = `
         <article class="changelog-entry">
           <span>2026.11.15</span>
           <div>
-            <h3>Gaming Beta 21 released</h3>
+            <h3>NanoOS Gaming released</h3>
             <p>
               First release installed on real hardware: NVIDIA and Vulkan drivers in the live system, early boot splash on NVIDIA, and an installer that verifies the driver for every kernel.
             </p>
@@ -1235,10 +1235,19 @@ document.querySelector('#app').innerHTML = `
         </details>
 
         <details>
-          <summary>Is NanoOS stable yet?</summary>
+          <summary>Is NanoOS ready to use?</summary>
           <p>
-            Not yet. Beta 21 has been installed on real hardware, but it is
-            still a beta: back up your data before installing it.
+            Yes. NanoOS Gaming is released and has been installed on real
+            hardware. As with any operating system, back up your data before
+            installing it.
+          </p>
+        </details>
+
+        <details>
+          <summary>Which version is the current release?</summary>
+          <p>
+            NanoOS Gaming 1.0, released in November 2026. The ISO file is
+            named after its build date (2026.11.15).
           </p>
         </details>
 
@@ -1312,7 +1321,7 @@ document.querySelector('#app').innerHTML = `
         <div class="roadmap-item active">
           <span>NOW</span>
           <div>
-            <h3>Gaming Beta 21</h3>
+            <h3>NanoOS Gaming</h3>
             <p>
               Released: installer, KDE Plasma desktop, six themes, gaming stack,
               NVIDIA and AMD drivers, and signed update repositories.
@@ -1332,22 +1341,11 @@ document.querySelector('#app').innerHTML = `
         </div>
 
         <div class="roadmap-item">
-          <span>0.x</span>
+          <span>LATER</span>
           <div>
             <h3>More editions</h3>
             <p>
               Explore additional NanoOS desktop and hardware targets.
-            </p>
-          </div>
-        </div>
-
-        <div class="roadmap-item">
-          <span>1.0</span>
-          <div>
-            <h3>NanoOS</h3>
-            <p>
-              A polished first stable release with a complete installation
-              and desktop experience.
             </p>
           </div>
         </div>

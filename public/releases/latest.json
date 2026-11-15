@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "product": "NanoOS",
-  "channel": "beta",
-  "version": "beta21",
+  "channel": "release",
+  "version": "release",
   "release_notes_url": "https://nanoosproject.org/#changelog",
   "published_at": "2026-11-15T20:00:00Z",
-  "summary": "NanoOS Gaming Beta 21 is available.",
+  "summary": "NanoOS Gaming is available.",
   "download_url": "https://github.com/falconediz911-stack/NanoRepo/releases/tag/iso-release"
 }
