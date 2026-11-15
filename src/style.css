@@ -3449,3 +3449,21 @@ html[data-theme="light"] {
     display: none;
   }
 }
+
+/* ---- direct download ------------------------------------------------------ */
+.download-help .checksum {
+  overflow-wrap: anywhere;
+  color: var(--cyan);
+}
+
+.download-mirror {
+  margin-top: 14px;
+  color: var(--dim);
+  font-size: 12px;
+}
+
+.download-mirror a {
+  color: var(--glacier);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
