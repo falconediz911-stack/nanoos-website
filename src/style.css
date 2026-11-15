@@ -3052,13 +3052,49 @@ html[data-theme] .download-help code {
 }
 
 /* ---- navigation -------------------------------------------------------- */
-html[data-theme] .navbar,
+/* At the top of the page the bar is just content on the background. */
+html[data-theme] .navbar {
+  --nav-inset: 18px;
+
+  padding-inline: 0;
+
+  border: 1px solid transparent;
+  border-radius: 20px;
+  background: transparent;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow: none;
+
+  transition:
+    width 0.35s ease,
+    padding 0.35s ease,
+    background 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+/* Scrolled: the glass bar appears and grows outward by --nav-inset on each
+   side, so the logo and button keep their place but get room to breathe. */
 html[data-theme] .navbar.scrolled {
-  border: 1px solid var(--border);
+  width: calc(min(100% - 60px, var(--max-width)) + 2 * var(--nav-inset));
+  padding-inline: var(--nav-inset);
+
+  border-color: var(--border);
   background: var(--glass);
   backdrop-filter: blur(18px) saturate(1.4);
   -webkit-backdrop-filter: blur(18px) saturate(1.4);
   box-shadow: var(--shadow-card);
+  transform: none;
+}
+
+@media (max-width: 650px) {
+  html[data-theme] .navbar {
+    --nav-inset: 10px;
+  }
+
+  html[data-theme] .navbar.scrolled {
+    width: calc(min(100% - 30px, var(--max-width)) + 2 * var(--nav-inset));
+  }
 }
 
 html[data-theme] .nav-links a {
