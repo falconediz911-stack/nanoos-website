@@ -88,7 +88,7 @@ document.querySelector('#app').innerHTML = `
             <span>Foundation</span>
           </div>
           <div>
-            <strong>COSMIC</strong>
+            <strong>KDE Plasma</strong>
             <span>Desktop</span>
           </div>
           <div>
@@ -124,13 +124,14 @@ document.querySelector('#app').innerHTML = `
         <div class="hero-download-copy">
           <span class="panel-kicker">READY TO EXPLORE</span>
           <strong>Get NanoOS.</strong>
-          <span>Development builds • x86_64 • NanoOS Gaming</span>
+          <span>Beta 21 • x86_64 • NanoOS Gaming</span>
         </div>
 
         <a
           class="hero-download-button"
-          href="/iso/nanoos-gaming-beta21-x86_64.iso"
-          download="nanoos-gaming-beta21-x86_64.iso"
+          href="https://github.com/falconediz911-stack/NanoRepo/releases/tag/iso-beta21"
+          target="_blank"
+          rel="noreferrer"
         >
           <span>Download NanoOS Gaming</span>
           <span aria-hidden="true">↓</span>
@@ -185,12 +186,13 @@ document.querySelector('#app').innerHTML = `
         </h2>
 
         <p>
-          NanoOS is exploring a focused desktop experience around COSMIC,
-          with carefully selected tools for everyday computing and gaming.
+          NanoOS Gaming ships KDE Plasma on Wayland with the Glacier look:
+          six system-wide themes that recolour the desktop, apps, terminal,
+          boot menu and boot splash together.
         </p>
 
         <div class="desktop-pills">
-          <span>COSMIC</span>
+          <span>KDE Plasma</span>
           <span>Wayland</span>
           <span>Kitty</span>
           <span>Linux</span>
@@ -406,32 +408,38 @@ document.querySelector('#app').innerHTML = `
         </h2>
 
         <p>
-          NanoOS is actively evolving. Stable public downloads will appear
-          here as releases become ready.
+          NanoOS Gaming Beta 21 is out. It is a beta: test it in a virtual
+          machine or back up your data before installing on real hardware.
         </p>
       </div>
 
       <div class="download-panel">
         <div>
-          <span class="panel-kicker">LATEST DEVELOPMENT</span>
+          <span class="panel-kicker">LATEST RELEASE · BETA 21</span>
           <h3>NanoOS Gaming</h3>
           <p>
-            The gaming edition is currently being developed and tested.
+            Downloads come from GitHub in parts (GitHub limits files to
+            2 GB). Download every part and SHA256SUMS, then join them:
           </p>
+          <div class="download-help">
+            <code>cat nanoos-gaming-*.iso.part-* &gt; nanoos-gaming-beta21.iso</code>
+            <code>sha256sum -c SHA256SUMS --ignore-missing</code>
+          </div>
         </div>
 
         <div class="download-meta">
           <span>Arch Linux based</span>
           <span>x86_64</span>
-          <span>Development build</span>
+          <span>Beta 21</span>
         </div>
 
         <a
-          class="iso-button"
-          href="/iso/nanoos-gaming-beta21-x86_64.iso"
-          download="nanoos-gaming-beta21-x86_64.iso"
+          class="download-center-button download-panel-button"
+          href="https://github.com/falconediz911-stack/NanoRepo/releases/tag/iso-beta21"
+          target="_blank"
+          rel="noreferrer"
         >
-          Download NanoOS Gaming ISO
+          Download from GitHub
           <span aria-hidden="true">↓</span>
         </a>
       </div>
@@ -489,7 +497,7 @@ document.querySelector('#app').innerHTML = `
           <span class="full-feature-kicker">BOOST</span>
           <h3>CPU Boost Controller.</h3>
           <p>
-            The NanoOS design includes user-facing power profiles ranging from
+            NanoOS Control Center switches between power profiles ranging from
             Ultra Power Saving and Balanced to Performance and Gaming.
           </p>
           <div class="full-feature-tags">
@@ -728,7 +736,8 @@ document.querySelector('#app').innerHTML = `
           <h3>NVIDIA kernel module support.</h3>
           <p>
             The NanoOS Gaming kernel configuration includes support for NVIDIA
-            kernel modules alongside the broader modern graphics stack.
+            kernel modules; the installer detects RTX 20-series and newer GPUs
+            and builds the NVIDIA open driver for every installed kernel.
           </p>
           <div class="full-feature-tags">
             <span>NVIDIA</span>
@@ -973,7 +982,7 @@ document.querySelector('#app').innerHTML = `
       <div class="download-center-grid">
         <article class="download-center-card featured-download">
           <div>
-            <span class="panel-kicker">CURRENT DEVELOPMENT</span>
+            <span class="panel-kicker">LATEST RELEASE</span>
             <h3>NanoOS Gaming</h3>
             <p>
               The current development ISO for x86_64 systems.
@@ -983,13 +992,14 @@ document.querySelector('#app').innerHTML = `
           <div class="download-center-meta">
             <span>Beta 21</span>
             <span>x86_64</span>
-            <span>Development</span>
+            <span>Beta</span>
           </div>
 
           <a
             class="download-center-button"
-            href="/iso/nanoos-gaming-beta21-x86_64.iso"
-            download="nanoos-gaming-beta21-x86_64.iso"
+            href="https://github.com/falconediz911-stack/NanoRepo/releases/tag/iso-beta21"
+            target="_blank"
+            rel="noreferrer"
           >
             Download ISO
             <span>↓</span>
@@ -1022,14 +1032,14 @@ document.querySelector('#app').innerHTML = `
 
         <div class="requirement-item">
           <span>FIRMWARE</span>
-          <strong>UEFI</strong>
-          <p>The current installation workflow is designed around UEFI systems.</p>
+          <strong>UEFI or BIOS</strong>
+          <p>Installs on UEFI (64- and 32-bit firmware) and legacy BIOS systems.</p>
         </div>
 
         <div class="requirement-item">
           <span>STORAGE</span>
-          <strong>Dedicated space</strong>
-          <p>Leave enough storage for the Linux system, applications, and games you plan to install.</p>
+          <strong>40 GB+</strong>
+          <p>At least 40 GB for NanoOS (48 GB with a separate /home), plus room for your games.</p>
         </div>
 
         <div class="requirement-item">
@@ -1050,13 +1060,13 @@ document.querySelector('#app').innerHTML = `
         <article class="guide-step">
           <span>01</span>
           <h3>Download</h3>
-          <p>Grab the current NanoOS Gaming development ISO.</p>
+          <p>Download the Beta 21 parts from GitHub and join them into one ISO.</p>
         </article>
 
         <article class="guide-step">
           <span>02</span>
           <h3>Flash</h3>
-          <p>Write the ISO to a USB drive using your preferred imaging tool.</p>
+          <p>Write the ISO to a USB stick with dd, Fedora Media Writer or balenaEtcher.</p>
         </article>
 
         <article class="guide-step">
@@ -1107,7 +1117,7 @@ document.querySelector('#app').innerHTML = `
         <div class="status-item">
           <span class="live-dot"></span>
           <strong>Website</strong>
-          <small>Overhaul in progress</small>
+          <small>Live</small>
         </div>
       </div>
     </section>
@@ -1120,47 +1130,45 @@ document.querySelector('#app').innerHTML = `
 
       <div class="changelog-list">
         <article class="changelog-entry">
-          <span>2026.09.29</span>
+          <span>2026.11.15</span>
           <div>
-            <h3>Gaming Beta 21</h3>
+            <h3>Gaming Beta 21 released</h3>
             <p>
-              Current NanoOS Gaming development ISO used by the website
-              download flow.
+              First release installed on real hardware: NVIDIA and Vulkan drivers in the live system, early boot splash on NVIDIA, and an installer that verifies the driver for every kernel.
             </p>
           </div>
         </article>
 
         <article class="changelog-entry">
-          <span>RECENT</span>
+          <span>2026.11.14</span>
           <div>
-            <h3>Installer overhaul</h3>
+            <h3>Signed update repositories</h3>
             <p>
-              Continued work on disk selection, partition workflows,
-              filesystems, desktop choices, and NanoOS configuration.
+              NanoOS kernels and system packages are published as signed pacman repositories on GitHub (NanoRepo), so installed systems update with pacman -Syu.
             </p>
           </div>
         </article>
 
         <article class="changelog-entry">
-          <span>RECENT</span>
+          <span>2026.11.14</span>
           <div>
-            <h3>Gaming kernel work</h3>
+            <h3>Six system-wide themes</h3>
             <p>
-              Continued tuning around CPU policy, I/O responsiveness, audio,
-              and graphics latency.
+              Glacier, Frost, Aurora, Ocean, Ember and Obsidian now recolour everything: desktop, NanoOS apps, terminal, window borders, GRUB and the boot splash.
             </p>
           </div>
         </article>
 
         <article class="changelog-entry">
-          <span>NOW</span>
+          <span>2026.11.13</span>
           <div>
-            <h3>Website overhaul</h3>
+            <h3>NanoSched kernel</h3>
             <p>
-              Expanding the NanoOS site into a complete project portal with
-              downloads, documentation, feature details, and interactive UI.
+              The NanoOS Gaming kernel 7.2.9 with the NanoSched burst scheduler patch, ThinLTO and AutoFDO profiling support.
             </p>
           </div>
+        </article>
+      </div>
         </article>
       </div>
     </section>
@@ -1229,17 +1237,35 @@ document.querySelector('#app').innerHTML = `
         <details>
           <summary>Is NanoOS stable yet?</summary>
           <p>
-            The current public work is still in development, so development
-            builds should be treated as testing software.
+            Not yet. Beta 21 has been installed on real hardware, but it is
+            still a beta: back up your data before installing it.
           </p>
         </details>
 
         <details>
           <summary>Can I install NanoOS alongside another operating system?</summary>
           <p>
-            The installer is being developed with multiple installation
-            workflows, but always review the selected disk and partitions
-            carefully before installing.
+            Yes. Use "Use free space" or manual partitioning, never "Use entire
+            disk". The installer shows exactly which disk and partitions it
+            will change and asks twice before writing anything.
+          </p>
+        </details>
+
+        <details>
+          <summary>How does NanoOS update?</summary>
+          <p>
+            With pacman, like Arch. NanoOS adds signed repositories (nanoos and
+            nanoos-gaming) for its kernels and system packages; run
+            sudo pacman -Syu to update everything.
+          </p>
+        </details>
+
+        <details>
+          <summary>Does NanoOS support NVIDIA graphics cards?</summary>
+          <p>
+            Yes. RTX 20-series and newer get the NVIDIA open driver, built
+            automatically for every installed kernel. AMD and Intel GPUs use
+            the open drivers built into Linux and Mesa.
           </p>
         </details>
       </div>
@@ -1265,6 +1291,13 @@ document.querySelector('#app').innerHTML = `
           <small>The NanoOS project website</small>
           <span class="project-arrow">↗</span>
         </a>
+
+        <a class="project-link-card" href="https://github.com/falconediz911-stack/NanoRepo" target="_blank" rel="noreferrer">
+          <span>PACKAGES</span>
+          <strong>NanoRepo</strong>
+          <small>Signed repositories, kernels and ISO releases</small>
+          <span class="project-arrow">↗</span>
+        </a>
       </div>
     </section>
 
@@ -1279,10 +1312,10 @@ document.querySelector('#app').innerHTML = `
         <div class="roadmap-item active">
           <span>NOW</span>
           <div>
-            <h3>Gaming RC</h3>
+            <h3>Gaming Beta 21</h3>
             <p>
-              Installer, COSMIC desktop, gaming stack, hardware support,
-              and live-system testing.
+              Released: installer, KDE Plasma desktop, six themes, gaming stack,
+              NVIDIA and AMD drivers, and signed update repositories.
             </p>
           </div>
         </div>
@@ -1290,10 +1323,10 @@ document.querySelector('#app').innerHTML = `
         <div class="roadmap-item">
           <span>NEXT</span>
           <div>
-            <h3>Glacier</h3>
+            <h3>App updates &amp; snapshots</h3>
             <p>
-              Expand NanoOS identity, desktop polish, themes, and visual
-              consistency.
+              NanoOS apps delivered and updated through pacman, and Btrfs
+              snapshots with rollback.
             </p>
           </div>
         </div>
@@ -1346,12 +1379,12 @@ const mobileMenu = document.querySelector('#mobile-menu')
 
 const applyTheme = (theme) => {
   if (theme === 'system') {
-    document.body.removeAttribute('data-theme')
+    document.documentElement.removeAttribute('data-theme')
   } else {
-    document.body.setAttribute('data-theme', theme)
+    document.documentElement.setAttribute('data-theme', theme)
   }
 
-  localStorage.setItem('nanoos-theme', theme)
+  try { localStorage.setItem('nanoos-theme', theme) } catch {}
 
   if (themeToggle) {
     themeToggle.textContent =
@@ -1366,18 +1399,19 @@ const applyTheme = (theme) => {
   }
 }
 
-const savedTheme = localStorage.getItem('nanoos-theme') || 'system'
-applyTheme(savedTheme)
+const readTheme = () => {
+  try { return localStorage.getItem('nanoos-theme') || 'system' } catch { return 'system' }
+}
+let currentTheme = readTheme()
+applyTheme(currentTheme)
 
 themeToggle?.addEventListener('click', () => {
-  const current = localStorage.getItem('nanoos-theme') || 'system'
-
-  const next =
-    current === 'system' ? 'light' :
-    current === 'light' ? 'dark' :
+  currentTheme =
+    currentTheme === 'system' ? 'light' :
+    currentTheme === 'light' ? 'dark' :
     'system'
 
-  applyTheme(next)
+  applyTheme(currentTheme)
 })
 
 mobileMenuToggle?.addEventListener('click', () => {
