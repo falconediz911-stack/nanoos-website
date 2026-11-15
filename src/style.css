@@ -1624,177 +1624,9 @@ button:focus-visible {
    NANOOS AUTOMATIC LIGHT MODE
    ========================================= */
 
-/* Light theme: follows the system unless the toggle forces dark. */
-@media (prefers-color-scheme: light) {
-html:not([data-theme="dark"]) {
-    --bg: #f4f8fc;
-    --bg-soft: #eaf2f9;
-    --card: #ffffff;
-    --card-hover: #f5faff;
 
-    --glacier: #3188c7;
-    --glacier-bright: #2173ad;
-    --cyan: #0b8f9f;
 
-    --white: #102033;
-    --muted: #526477;
-    --dim: #718398;
-
-    --border: rgba(36, 119, 185, 0.16);
-    --border-strong: rgba(36, 119, 185, 0.30);
-
-    --body-gradient-start: #f8fbfe;
-    --body-gradient-end: #edf5fb;
-    --grid-line: rgba(36, 119, 185, 0.045);
-
-    --glass: rgba(255, 255, 255, 0.78);
-    --preview-bg: #f7fbff;
-    --preview-bar: #eaf2f9;
-    --preview-sidebar: rgba(230, 240, 249, 0.72);
-    --preview-terminal: rgba(255, 255, 255, 0.88);
-  }
-html:not([data-theme="dark"]) body {
-    color: var(--white);
-  }
-html:not([data-theme="dark"]) .nano-emblem {
-    border-color: rgba(49, 136, 199, 0.30);
-    background:
-      linear-gradient(
-        145deg,
-        rgba(49, 136, 199, 0.19),
-        rgba(11, 143, 159, 0.10)
-      );
-    box-shadow:
-      0 0 100px rgba(11, 143, 159, 0.14),
-      inset 0 0 60px rgba(49, 136, 199, 0.10),
-      inset 0 1px rgba(255, 255, 255, 0.65);
-  }
-html:not([data-theme="dark"]) .nano-emblem-inner {
-    background:
-      linear-gradient(
-        145deg,
-        rgba(49, 136, 199, 0.20),
-        rgba(11, 143, 159, 0.04)
-      );
-    border-color: rgba(49, 136, 199, 0.20);
-    box-shadow:
-      inset 0 1px rgba(255, 255, 255, 0.75);
-  }
-html:not([data-theme="dark"]) .orb {
-    border-color: rgba(49, 136, 199, 0.22);
-    background: rgba(49, 136, 199, 0.035);
-  }
-html:not([data-theme="dark"]) .orb-two {
-    opacity: 0.62;
-  }
-html:not([data-theme="dark"]) .navbar.scrolled {
-    background: rgba(255, 255, 255, 0.82);
-    border-color: rgba(36, 119, 185, 0.18);
-    box-shadow:
-      0 10px 35px rgba(30, 70, 100, 0.12),
-      inset 0 1px 0 rgba(255, 255, 255, 0.9);
-  }
-html:not([data-theme="dark"]) .brand-mark {
-    background:
-      linear-gradient(
-        135deg,
-        rgba(49, 136, 199, 0.19),
-        rgba(11, 143, 159, 0.10)
-      );
-    border-color: rgba(49, 136, 199, 0.30);
-    box-shadow: inset 0 1px rgba(255, 255, 255, 0.9);
-  }
-html:not([data-theme="dark"]) .desktop-preview {
-    box-shadow:
-      0 40px 100px rgba(30, 70, 100, 0.16),
-      0 0 80px rgba(8, 127, 145, 0.06);
-  }
-html:not([data-theme="dark"]) .preview-bar {
-    border-bottom-color: rgba(36, 119, 185, 0.12);
-  }
-html:not([data-theme="dark"]) .preview-title {
-    color: #60758a;
-  }
-html:not([data-theme="dark"]) .window-dots span {
-    background: rgba(36, 119, 185, 0.28);
-  }
-html:not([data-theme="dark"]) .preview-sidebar {
-    border-right-color: rgba(36, 119, 185, 0.10);
-  }
-html:not([data-theme="dark"]) .sidebar-logo {
-    background: rgba(36, 119, 185, 0.12);
-  }
-html:not([data-theme="dark"]) .sidebar-line {
-    background: rgba(36, 119, 185, 0.09);
-  }
-html:not([data-theme="dark"]) .sidebar-line.active {
-    background: rgba(8, 127, 145, 0.35);
-  }
-html:not([data-theme="dark"]) .preview-terminal {
-    border-color: rgba(36, 119, 185, 0.16);
-    box-shadow: 0 25px 60px rgba(30, 70, 100, 0.14);
-  }
-html:not([data-theme="dark"]) .nav-button {
-    background: rgba(36, 119, 185, 0.055);
-  }
-html:not([data-theme="dark"]) .nav-button:hover {
-    background: rgba(36, 119, 185, 0.10);
-  }
-html:not([data-theme="dark"]) .secondary-button {
-    background: rgba(36, 119, 185, 0.045);
-  }
-html:not([data-theme="dark"]) .secondary-button:hover {
-    background: rgba(36, 119, 185, 0.085);
-  }
-html:not([data-theme="dark"]) .floating-card {
-    border-color: rgba(36, 119, 185, 0.15);
-    box-shadow:
-      0 15px 40px rgba(30, 70, 100, 0.12),
-      inset 0 1px rgba(255, 255, 255, 0.8);
-  }
-html:not([data-theme="dark"]) .feature-card,
-html:not([data-theme="dark"]) .edition-card,
-html:not([data-theme="dark"]) .download-panel {
-    background:
-      linear-gradient(
-        145deg,
-        rgba(36, 119, 185, 0.045),
-        rgba(8, 127, 145, 0.018)
-      );
-  }
-html:not([data-theme="dark"]) .feature-card:hover,
-html:not([data-theme="dark"]) .edition-card:hover {
-    background:
-      linear-gradient(
-        145deg,
-        rgba(36, 119, 185, 0.075),
-        rgba(8, 127, 145, 0.03)
-      );
-    box-shadow: 0 20px 55px rgba(30, 70, 100, 0.10);
-  }
-html:not([data-theme="dark"]) .edition-icon,
-html:not([data-theme="dark"]) .desktop-pills span,
-html:not([data-theme="dark"]) .preview-mini-grid div,
-html:not([data-theme="dark"]) .iso-button {
-    background: rgba(36, 119, 185, 0.045);
-  }
-html:not([data-theme="dark"]) .edition-icon {
-    border-color: rgba(36, 119, 185, 0.13);
-  }
-html:not([data-theme="dark"]) .edition-badge {
-    border-color: rgba(8, 127, 145, 0.18);
-  }
-html:not([data-theme="dark"]) .download-panel {
-    box-shadow:
-      inset 0 1px rgba(255, 255, 255, 0.8),
-      0 25px 70px rgba(30, 70, 100, 0.10);
-  }
-html:not([data-theme="dark"]) .iso-button {
-    color: #526477;
-  }
-}
-
-/* Light theme chosen with the toggle. */
+/* Light theme (data-theme is always set to the resolved theme). */
 html[data-theme="light"] {
     --bg: #f4f8fc;
     --bg-soft: #eaf2f9;
@@ -2241,42 +2073,9 @@ html[data-theme="light"] .iso-button {
   }
 }
 
-/* Light theme: follows the system unless the toggle forces dark. */
-@media (prefers-color-scheme: light) {
-html:not([data-theme="dark"]) .screenshot-card {
-    background:
-      linear-gradient(
-        145deg,
-        rgba(36, 119, 185, 0.045),
-        rgba(8, 127, 145, 0.018)
-      );
-    box-shadow:
-      0 20px 60px rgba(30, 70, 100, 0.10),
-      inset 0 1px rgba(255, 255, 255, 0.8);
-  }
-html:not([data-theme="dark"]) .screenshot-card:hover {
-    box-shadow:
-      0 28px 70px rgba(30, 70, 100, 0.14),
-      0 0 35px rgba(8, 127, 145, 0.045);
-  }
-html:not([data-theme="dark"]) .screenshot-placeholder {
-    background:
-      radial-gradient(
-        circle at 50% 35%,
-        rgba(8, 127, 145, 0.08),
-        transparent 48%
-      ),
-      var(--preview-bg);
-  }
-html:not([data-theme="dark"]) .placeholder-window {
-    box-shadow: 0 30px 70px rgba(30, 70, 100, 0.14);
-  }
-html:not([data-theme="dark"]) .mini-placeholder {
-    box-shadow: 0 20px 45px rgba(30, 70, 100, 0.12);
-  }
-}
 
-/* Light theme chosen with the toggle. */
+
+/* Light theme (data-theme is always set to the resolved theme). */
 html[data-theme="light"] .screenshot-card {
     background:
       linear-gradient(
@@ -3098,4 +2897,496 @@ html[data-theme="light"] .mini-placeholder {
     padding: 9px 12px;
     font-size: 12px;
   }
+}
+
+/* =========================================================================
+   GLACIER DEEP: visual refresh
+   Colour, contrast and surface layer on top of the layout above. It does not
+   move anything: positions, the hero emblem and all copy stay as they are.
+   Rules are prefixed with html[data-theme] (always set, see index.html) so
+   they apply to both themes and win over the older per-theme tweaks.
+   ========================================================================= */
+
+:root,
+html[data-theme="dark"] {
+  --bg: #050912;
+  --bg-soft: #08101d;
+  --card: #0b1526;
+  --card-hover: #0f1c31;
+
+  --glacier: #8fcbff;
+  --glacier-bright: #c4e5ff;
+  --cyan: #6fe3ef;
+
+  --white: #f3f8ff;
+  --muted: #a6b5c9;
+  --dim: #6f8097;
+
+  --border: rgba(143, 203, 255, 0.13);
+  --border-strong: rgba(143, 203, 255, 0.32);
+
+  --body-gradient-start: #050912;
+  --body-gradient-end: #060d1a;
+  --grid-line: rgba(143, 203, 255, 0.028);
+  --glass: rgba(8, 15, 28, 0.72);
+  --preview-bg: #08111f;
+  --preview-bar: #0c1729;
+  --preview-sidebar: rgba(4, 9, 18, 0.55);
+  --preview-terminal: rgba(7, 13, 25, 0.9);
+
+  --aurora-1: rgba(111, 227, 239, 0.15);
+  --aurora-2: rgba(84, 150, 255, 0.13);
+  --aurora-3: rgba(140, 120, 255, 0.08);
+
+  --surface: linear-gradient(160deg, rgba(26, 47, 78, 0.62) 0%, rgba(10, 19, 35, 0.78) 100%);
+  --surface-hover: linear-gradient(160deg, rgba(34, 62, 100, 0.72) 0%, rgba(12, 23, 42, 0.86) 100%);
+  --surface-solid: #0b1526;
+  --shadow-card:
+    inset 0 1px 0 rgba(255, 255, 255, 0.06),
+    0 22px 50px -26px rgba(0, 0, 0, 0.75);
+  --shadow-hover:
+    inset 0 1px 0 rgba(255, 255, 255, 0.09),
+    0 34px 70px -30px rgba(0, 0, 0, 0.85),
+    0 0 46px -14px rgba(111, 227, 239, 0.28);
+
+  --accent-grad: linear-gradient(135deg, #a9d8ff 0%, #6fe3ef 60%, #4fcadb 100%);
+  --accent-text: linear-gradient(120deg, #9fd4ff 0%, #6fe3ef 100%);
+  --heading-grad: linear-gradient(180deg, #ffffff 25%, #bcdcff 100%);
+  --accent-fg: #03121c;
+  --accent-glow: 0 12px 34px -10px rgba(111, 227, 239, 0.55);
+
+  --tag-bg: rgba(111, 227, 239, 0.08);
+  --tag-border: rgba(111, 227, 239, 0.24);
+  --tag-fg: #a3eef5;
+
+  --ghost-bg: rgba(143, 203, 255, 0.06);
+  --ghost-bg-hover: rgba(143, 203, 255, 0.12);
+}
+
+html[data-theme="light"] {
+  --bg: #eef3f9;
+  --bg-soft: #e5edf6;
+  --card: #ffffff;
+  --card-hover: #ffffff;
+
+  --glacier: #1f6fc4;
+  --glacier-bright: #175ca8;
+  --cyan: #08808f;
+
+  --white: #0a1626;
+  --muted: #3e5068;
+  --dim: #64768d;
+
+  --border: rgba(18, 58, 110, 0.13);
+  --border-strong: rgba(20, 100, 190, 0.34);
+
+  --body-gradient-start: #f6f9fd;
+  --body-gradient-end: #e8f0f8;
+  --grid-line: rgba(20, 80, 150, 0.05);
+  --glass: rgba(255, 255, 255, 0.82);
+  --preview-bg: #f7fbff;
+  --preview-bar: #e8f0f9;
+  --preview-sidebar: rgba(226, 237, 248, 0.85);
+  --preview-terminal: rgba(255, 255, 255, 0.94);
+
+  --aurora-1: rgba(8, 160, 180, 0.13);
+  --aurora-2: rgba(40, 110, 220, 0.12);
+  --aurora-3: rgba(110, 90, 240, 0.07);
+
+  --surface: linear-gradient(160deg, #ffffff 0%, #f6f9fd 100%);
+  --surface-hover: linear-gradient(160deg, #ffffff 0%, #f1f7ff 100%);
+  --surface-solid: #ffffff;
+  --shadow-card:
+    0 1px 2px rgba(15, 40, 80, 0.06),
+    0 16px 36px -18px rgba(15, 45, 90, 0.22);
+  --shadow-hover:
+    0 1px 2px rgba(15, 40, 80, 0.06),
+    0 30px 60px -24px rgba(15, 55, 110, 0.32),
+    0 0 0 1px rgba(20, 110, 200, 0.12);
+
+  --accent-grad: linear-gradient(135deg, #2b7fe0 0%, #0c9db0 100%);
+  --accent-text: linear-gradient(120deg, #1f6fc4 0%, #0a93a5 100%);
+  --heading-grad: linear-gradient(180deg, #08131f 30%, #1c3b62 100%);
+  --accent-fg: #ffffff;
+  --accent-glow: 0 12px 28px -10px rgba(20, 110, 200, 0.5);
+
+  --tag-bg: rgba(8, 128, 143, 0.07);
+  --tag-border: rgba(8, 128, 143, 0.24);
+  --tag-fg: #066c79;
+
+  --ghost-bg: rgba(20, 90, 170, 0.05);
+  --ghost-bg-hover: rgba(20, 90, 170, 0.1);
+}
+
+html {
+  scrollbar-color: var(--border-strong) transparent;
+}
+
+html[data-theme] body {
+  background:
+    radial-gradient(1100px 620px at 82% -6%, var(--aurora-1), transparent 62%),
+    radial-gradient(900px 600px at -8% 38%, var(--aurora-2), transparent 60%),
+    linear-gradient(180deg, var(--body-gradient-start) 0%, var(--body-gradient-end) 100%);
+  font-family: 'Inter', 'Noto Sans', system-ui, sans-serif;
+  font-feature-settings: 'cv11', 'ss01';
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Slow aurora that stays behind the page while scrolling. */
+html[data-theme] body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  background:
+    radial-gradient(700px 480px at 90% 85%, var(--aurora-3), transparent 65%),
+    radial-gradient(800px 520px at 12% 100%, var(--aurora-1), transparent 70%);
+  opacity: 0.8;
+}
+
+html[data-theme] code,
+html[data-theme] .download-help code {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+/* ---- navigation -------------------------------------------------------- */
+html[data-theme] .navbar,
+html[data-theme] .navbar.scrolled {
+  border: 1px solid var(--border);
+  background: var(--glass);
+  backdrop-filter: blur(18px) saturate(1.4);
+  -webkit-backdrop-filter: blur(18px) saturate(1.4);
+  box-shadow: var(--shadow-card);
+}
+
+html[data-theme] .nav-links a {
+  color: var(--muted);
+  font-weight: 500;
+}
+
+html[data-theme] .nav-links a:hover {
+  color: var(--white);
+}
+
+html[data-theme] .nav-button {
+  border: 1px solid transparent;
+  background: var(--accent-grad);
+  color: var(--accent-fg);
+  font-weight: 700;
+  box-shadow: var(--accent-glow);
+}
+
+html[data-theme] .nav-button:hover {
+  filter: brightness(1.06);
+  transform: translateY(-1px);
+}
+
+html[data-theme] .theme-toggle,
+html[data-theme] .mobile-menu-toggle {
+  border-color: var(--border);
+  background: var(--ghost-bg);
+  color: var(--white);
+}
+
+html[data-theme] .theme-toggle:hover,
+html[data-theme] .mobile-menu-toggle:hover {
+  border-color: var(--border-strong);
+  background: var(--ghost-bg-hover);
+}
+
+html[data-theme] .mobile-nav-open .mobile-menu {
+  background: var(--surface-solid);
+  box-shadow: var(--shadow-hover);
+}
+
+html[data-theme] .mobile-menu a:hover {
+  background: var(--ghost-bg-hover);
+}
+
+/* ---- headings: gradient ink, accent words ------------------------------ */
+html[data-theme] .hero-section h1,
+html[data-theme] .section-heading h2,
+html[data-theme] .desktop-copy h2,
+html[data-theme] .iso-hero h2 {
+  background: var(--heading-grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+html[data-theme] .hero-section h1 span,
+html[data-theme] .iso-hero h2 span {
+  background: var(--accent-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: none;
+  filter: drop-shadow(0 0 28px rgba(111, 227, 239, 0.22));
+}
+
+html[data-theme] .hero-section p,
+html[data-theme] .iso-hero p,
+html[data-theme] .desktop-copy p {
+  color: var(--muted);
+}
+
+html[data-theme] .eyebrow {
+  padding: 6px 12px 6px 10px;
+  border: 1px solid var(--tag-border);
+  border-radius: 999px;
+  background: var(--tag-bg);
+  color: var(--tag-fg);
+}
+
+html[data-theme] .section-heading > span,
+html[data-theme] .desktop-copy > span,
+html[data-theme] .iso-hero > span {
+  align-self: center;
+  padding: 5px 10px;
+  border: 1px solid var(--tag-border);
+  border-radius: 999px;
+  background: var(--tag-bg);
+  color: var(--tag-fg);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  line-height: 1.2;
+}
+
+html[data-theme] .desktop-copy > span,
+html[data-theme] .iso-hero > span {
+  display: inline-block;
+}
+
+/* ---- buttons ------------------------------------------------------------ */
+html[data-theme] .primary-button,
+html[data-theme] .hero-download-button,
+html[data-theme] .download-center-button {
+  border: 1px solid transparent;
+  background: var(--accent-grad);
+  color: var(--accent-fg);
+  font-weight: 800;
+  box-shadow: var(--accent-glow), inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+html[data-theme] .primary-button:hover,
+html[data-theme] .hero-download-button:hover,
+html[data-theme] .download-center-button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.06);
+  box-shadow: 0 18px 40px -12px rgba(111, 227, 239, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+html[data-theme] .secondary-button {
+  border: 1px solid var(--border-strong);
+  background: var(--ghost-bg);
+  color: var(--white);
+  backdrop-filter: blur(10px);
+}
+
+html[data-theme] .secondary-button:hover {
+  background: var(--ghost-bg-hover);
+  border-color: var(--glacier);
+}
+
+/* ---- hero (text column only; the emblem is untouched) ------------------- */
+html[data-theme] .hero-stats strong {
+  color: var(--white);
+}
+
+html[data-theme] .hero-stats span {
+  color: var(--dim);
+}
+
+html[data-theme] .hero-download-cta {
+  border-color: var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+}
+
+html[data-theme] .hero-download-copy > span:first-child,
+html[data-theme] .panel-kicker {
+  color: var(--cyan);
+}
+
+/* ---- cards ---------------------------------------------------------------- */
+html[data-theme] .feature-card,
+html[data-theme] .edition-card,
+html[data-theme] .download-panel,
+html[data-theme] .full-feature-card,
+html[data-theme] .showcase-card,
+html[data-theme] .inside-panels,
+html[data-theme] .download-center-card,
+html[data-theme] .requirement-item,
+html[data-theme] .guide-step,
+html[data-theme] .status-item,
+html[data-theme] .changelog-entry,
+html[data-theme] .hardware-card,
+html[data-theme] .faq-list details,
+html[data-theme] .project-link-card {
+  border-color: var(--border);
+  background: var(--surface);
+  box-shadow: var(--shadow-card);
+}
+
+html[data-theme] .feature-card:hover,
+html[data-theme] .edition-card:hover,
+html[data-theme] .full-feature-card:hover,
+html[data-theme] .showcase-card:hover,
+html[data-theme] .download-center-card:hover,
+html[data-theme] .requirement-item:hover,
+html[data-theme] .guide-step:hover,
+html[data-theme] .hardware-card:hover,
+html[data-theme] .changelog-entry:hover,
+html[data-theme] .project-link-card:hover {
+  border-color: var(--border-strong);
+  background: var(--surface-hover);
+  box-shadow: var(--shadow-hover);
+}
+
+html[data-theme] .edition-featured,
+html[data-theme] .featured-feature,
+html[data-theme] .featured-download,
+html[data-theme] .download-panel {
+  border-color: var(--border-strong);
+  background:
+    radial-gradient(600px 260px at 0% 0%, var(--aurora-1), transparent 70%),
+    var(--surface);
+}
+
+html[data-theme] .feature-card p,
+html[data-theme] .edition-card p,
+html[data-theme] .full-feature-card p,
+html[data-theme] .download-panel p,
+html[data-theme] .changelog-entry p,
+html[data-theme] .guide-step p,
+html[data-theme] .hardware-card p,
+html[data-theme] .requirement-item span,
+html[data-theme] .faq-list details > p {
+  color: var(--muted);
+}
+
+html[data-theme] .feature-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--tag-border);
+  border-radius: 14px;
+  background: var(--tag-bg);
+  color: var(--cyan);
+  font-size: 20px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+html[data-theme] .edition-icon {
+  border-color: var(--tag-border);
+  background: var(--tag-bg);
+}
+
+html[data-theme] .edition-badge {
+  border-color: var(--tag-border);
+  background: var(--tag-bg);
+  color: var(--tag-fg);
+}
+
+html[data-theme] .full-feature-number,
+html[data-theme] .changelog-entry > span {
+  color: var(--cyan);
+}
+
+html[data-theme] .guide-step > span {
+  background: var(--accent-grad);
+  color: var(--accent-fg);
+  font-weight: 800;
+  box-shadow: var(--accent-glow);
+}
+
+/* ---- tags & pills ---------------------------------------------------------- */
+html[data-theme] .full-feature-tags span,
+html[data-theme] .edition-tags span,
+html[data-theme] .desktop-pills span,
+html[data-theme] .download-meta span,
+html[data-theme] .download-center-meta span {
+  border: 1px solid var(--tag-border);
+  border-radius: 999px;
+  background: var(--tag-bg);
+  color: var(--tag-fg);
+  font-weight: 600;
+}
+
+/* ---- desktop preview & showcase windows ---------------------------------- */
+html[data-theme] .desktop-preview,
+html[data-theme] .showcase-window,
+html[data-theme] .mini-showcase,
+html[data-theme] .gaming-showcase {
+  border-color: var(--border-strong);
+  box-shadow: var(--shadow-hover);
+}
+
+/* ---- Inside NanoOS tabs ----------------------------------------------------- */
+html[data-theme] .inside-tab {
+  border-color: var(--border);
+  background: var(--ghost-bg);
+  color: var(--muted);
+}
+
+html[data-theme] .inside-tab:hover {
+  border-color: var(--border-strong);
+  color: var(--white);
+}
+
+html[data-theme] .inside-tab.active {
+  border-color: transparent;
+  background: var(--accent-grad);
+  color: var(--accent-fg);
+  box-shadow: var(--accent-glow);
+}
+
+/* ---- download card help ------------------------------------------------------ */
+html[data-theme] .download-help code {
+  border-color: var(--border);
+  background: var(--preview-terminal);
+  color: var(--white);
+}
+
+/* ---- status, FAQ, roadmap, footer ---------------------------------------------- */
+html[data-theme] .live-dot {
+  background: var(--cyan);
+}
+
+html[data-theme] .faq-list details[open] {
+  border-color: var(--border-strong);
+  background: var(--surface-hover);
+}
+
+html[data-theme] .faq-list summary::after {
+  color: var(--cyan);
+}
+
+html[data-theme] .roadmap,
+html[data-theme] .roadmap-item {
+  border-color: var(--border);
+}
+
+html[data-theme] .roadmap-item > span {
+  color: var(--cyan);
+}
+
+html[data-theme] .roadmap-item.active h3 {
+  background: var(--accent-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+html[data-theme] footer {
+  border-top: 1px solid var(--border);
+}
+
+html[data-theme] :focus-visible {
+  outline: 2px solid var(--cyan);
+  outline-offset: 3px;
 }

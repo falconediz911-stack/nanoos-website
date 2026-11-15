@@ -1377,12 +1377,13 @@ const themeToggle = document.querySelector('#theme-toggle')
 const mobileMenuToggle = document.querySelector('#mobile-menu-toggle')
 const mobileMenu = document.querySelector('#mobile-menu')
 
+const systemLight = window.matchMedia('(prefers-color-scheme: light)')
+
 const applyTheme = (theme) => {
-  if (theme === 'system') {
-    document.documentElement.removeAttribute('data-theme')
-  } else {
-    document.documentElement.setAttribute('data-theme', theme)
-  }
+  const resolved =
+    theme === 'system' ? (systemLight.matches ? 'light' : 'dark') : theme
+
+  document.documentElement.setAttribute('data-theme', resolved)
 
   try { localStorage.setItem('nanoos-theme', theme) } catch {}
 
@@ -1404,6 +1405,10 @@ const readTheme = () => {
 }
 let currentTheme = readTheme()
 applyTheme(currentTheme)
+
+systemLight.addEventListener('change', () => {
+  if (currentTheme === 'system') applyTheme('system')
+})
 
 themeToggle?.addEventListener('click', () => {
   currentTheme =
