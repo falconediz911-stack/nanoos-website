@@ -124,14 +124,12 @@ document.querySelector('#app').innerHTML = `
         <div class="hero-download-copy">
           <span class="panel-kicker">READY TO EXPLORE</span>
           <strong>Get NanoOS.</strong>
-          <span>x86_64 • NanoOS Gaming</span>
+          <span>x86_64 • NanoOS Gaming • 4.7 GB ISO</span>
         </div>
 
         <a
           class="hero-download-button"
-          href="https://github.com/falconediz911-stack/NanoRepo/releases/tag/iso-release"
-          target="_blank"
-          rel="noreferrer"
+          href="https://download.nanoosproject.org/nanoos-gaming-2026.11.15-x86_64.iso"
         >
           <span>Download NanoOS Gaming</span>
           <span aria-hidden="true">↓</span>
@@ -418,12 +416,12 @@ document.querySelector('#app').innerHTML = `
           <span class="panel-kicker">LATEST RELEASE</span>
           <h3>NanoOS Gaming</h3>
           <p>
-            Downloads come from GitHub in parts (GitHub limits files to
-            2 GB). Download every part and SHA256SUMS, check them, then join them:
+            One ISO file (4.7 GB). After downloading, you can check that it
+            arrived intact: the command must print this SHA-256 checksum.
           </p>
           <div class="download-help">
-            <code>sha256sum -c SHA256SUMS --ignore-missing</code>
-            <code>cat nanoos-gaming-*.iso.part-* &gt; nanoos-gaming.iso</code>
+            <code>sha256sum nanoos-gaming-2026.11.15-x86_64.iso</code>
+            <code class="checksum">a7f47b5b15915fac0888b5dd082542f9a154a95127b9349ad324db7857e5a1aa</code>
           </div>
         </div>
 
@@ -435,13 +433,17 @@ document.querySelector('#app').innerHTML = `
 
         <a
           class="download-center-button download-panel-button"
-          href="https://github.com/falconediz911-stack/NanoRepo/releases/tag/iso-release"
-          target="_blank"
-          rel="noreferrer"
+          href="https://download.nanoosproject.org/nanoos-gaming-2026.11.15-x86_64.iso"
         >
-          Download from GitHub
+          Download NanoOS Gaming
           <span aria-hidden="true">↓</span>
         </a>
+
+        <p class="download-mirror">
+          Mirror:
+          <a href="https://github.com/falconediz911-stack/NanoRepo/releases/tag/iso-release" target="_blank" rel="noreferrer">GitHub</a>
+          (in 3 parts with signed checksums)
+        </p>
       </div>
     </section>
 
@@ -995,9 +997,7 @@ document.querySelector('#app').innerHTML = `
 
           <a
             class="download-center-button"
-            href="https://github.com/falconediz911-stack/NanoRepo/releases/tag/iso-release"
-            target="_blank"
-            rel="noreferrer"
+            href="https://download.nanoosproject.org/nanoos-gaming-2026.11.15-x86_64.iso"
           >
             Download ISO
             <span>↓</span>
@@ -1058,7 +1058,7 @@ document.querySelector('#app').innerHTML = `
         <article class="guide-step">
           <span>01</span>
           <h3>Download</h3>
-          <p>Download the parts from GitHub and join them into one ISO.</p>
+          <p>Download the NanoOS Gaming ISO (one 4.7 GB file) from this page.</p>
         </article>
 
         <article class="guide-step">

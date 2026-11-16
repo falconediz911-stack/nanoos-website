@@ -6,5 +6,8 @@
   "release_notes_url": "https://nanoosproject.org/#changelog",
   "published_at": "2026-11-15T20:00:00Z",
   "summary": "NanoOS Gaming is available.",
-  "download_url": "https://github.com/falconediz911-stack/NanoRepo/releases/tag/iso-release"
+  "download_url": "https://download.nanoosproject.org/nanoos-gaming-2026.11.15-x86_64.iso",
+  "sha256": "a7f47b5b15915fac0888b5dd082542f9a154a95127b9349ad324db7857e5a1aa",
+  "size": 5035974656,
+  "mirror_url": "https://github.com/falconediz911-stack/NanoRepo/releases/tag/iso-release"
 }
