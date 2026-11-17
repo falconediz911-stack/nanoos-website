@@ -124,12 +124,12 @@ document.querySelector('#app').innerHTML = `
         <div class="hero-download-copy">
           <span class="panel-kicker">READY TO EXPLORE</span>
           <strong>Get NanoOS.</strong>
-          <span>x86_64 • NanoOS Gaming • 4.0 GB ISO</span>
+          <span>x86_64 • NanoOS Gaming • 2.8 GB ISO</span>
         </div>
 
         <a
           class="hero-download-button"
-          href="https://download.nanoosproject.org/nanoos-gaming-2026.11.16-x86_64.iso"
+          href="https://download.nanoosproject.org/nanoos-gaming-2026.11.17-x86_64.iso"
         >
           <span>Download NanoOS Gaming</span>
           <span aria-hidden="true">↓</span>
@@ -416,12 +416,12 @@ document.querySelector('#app').innerHTML = `
           <span class="panel-kicker">LATEST RELEASE</span>
           <h3>NanoOS Gaming</h3>
           <p>
-            One ISO file (4.0 GB). After downloading, you can check that it
+            One ISO file (2.8 GB). After downloading, you can check that it
             arrived intact: the command must print this SHA-256 checksum.
           </p>
           <div class="download-help">
-            <code>sha256sum nanoos-gaming-2026.11.16-x86_64.iso</code>
-            <code class="checksum">2db239f006c6fd06fd3f29756dbd375b64d36bcad2269dbc98be80bf1219f75a</code>
+            <code>sha256sum nanoos-gaming-2026.11.17-x86_64.iso</code>
+            <code class="checksum">65a4c434ba51b8ce641aa6e289ffb0a8bcafc2d553ed759e7024227b83c1a1e9</code>
           </div>
         </div>
 
@@ -433,7 +433,7 @@ document.querySelector('#app').innerHTML = `
 
         <a
           class="download-center-button download-panel-button"
-          href="https://download.nanoosproject.org/nanoos-gaming-2026.11.16-x86_64.iso"
+          href="https://download.nanoosproject.org/nanoos-gaming-2026.11.17-x86_64.iso"
         >
           Download NanoOS Gaming
           <span aria-hidden="true">↓</span>
@@ -442,7 +442,7 @@ document.querySelector('#app').innerHTML = `
         <p class="download-mirror">
           Mirror:
           <a href="https://github.com/falconediz911-stack/NanoRepo/releases/tag/iso-release" target="_blank" rel="noreferrer">GitHub</a>
-          (in 3 parts with signed checksums)
+          (in parts with signed checksums)
         </p>
       </div>
     </section>
@@ -997,7 +997,7 @@ document.querySelector('#app').innerHTML = `
 
           <a
             class="download-center-button"
-            href="https://download.nanoosproject.org/nanoos-gaming-2026.11.16-x86_64.iso"
+            href="https://download.nanoosproject.org/nanoos-gaming-2026.11.17-x86_64.iso"
           >
             Download ISO
             <span>↓</span>
@@ -1058,7 +1058,7 @@ document.querySelector('#app').innerHTML = `
         <article class="guide-step">
           <span>01</span>
           <h3>Download</h3>
-          <p>Download the NanoOS Gaming ISO (one 4.0 GB file) from this page.</p>
+          <p>Download the NanoOS Gaming ISO (one 2.8 GB file) from this page.</p>
         </article>
 
         <article class="guide-step">
@@ -1127,6 +1127,16 @@ document.querySelector('#app').innerHTML = `
       </div>
 
       <div class="changelog-list">
+        <article class="changelog-entry">
+          <span>2026.11.17</span>
+          <div>
+            <h3>NanoOS Gaming 1.1</h3>
+            <p>
+              A 2.8 GB ISO, a faster installer that picks the fastest mirrors and detects your timezone, a new "NanoOS is installed" page, preconfigured zsh, a richer fastfetch, a GRUB menu sized for your monitor (including 4K), the correct clock when you also use Windows, and Welcome, Control Center and Game Mode as real apps. Existing installs get it with sudo pacman -Syu.
+            </p>
+          </div>
+        </article>
+
         <article class="changelog-entry">
           <span>2026.11.16</span>
           <div>
@@ -1253,8 +1263,9 @@ document.querySelector('#app').innerHTML = `
         <details>
           <summary>Which version is the current release?</summary>
           <p>
-            NanoOS Gaming 1.0.1, released in November 2026. The ISO file is
-            named after its build date (2026.11.16).
+            NanoOS Gaming 1.1, released in November 2026. The ISO file is
+            named after its build date (2026.11.17). Installed systems get
+            1.1 with a normal system update.
           </p>
         </details>
 
