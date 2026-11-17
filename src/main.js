@@ -421,7 +421,7 @@ document.querySelector('#app').innerHTML = `
           </p>
           <div class="download-help">
             <code>sha256sum nanoos-gaming-2026.11.17-x86_64.iso</code>
-            <code class="checksum">27dce4f26b9ee2b0dd951639bccdc2b91c0090cb7924b31124cd6c8aa433d0ca</code>
+            <code class="checksum">65a4c434ba51b8ce641aa6e289ffb0a8bcafc2d553ed759e7024227b83c1a1e9</code>
           </div>
         </div>
 
