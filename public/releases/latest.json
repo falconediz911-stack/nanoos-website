@@ -2,12 +2,12 @@
   "schema_version": 1,
   "product": "NanoOS",
   "channel": "release",
-  "version": "release",
+  "version": "1.1",
   "release_notes_url": "https://nanoosproject.org/#changelog",
-  "published_at": "2026-11-16T18:00:00Z",
-  "summary": "NanoOS Gaming 1.0.1: boot fix, Ventoy and Rufus support.",
-  "download_url": "https://download.nanoosproject.org/nanoos-gaming-2026.11.16-x86_64.iso",
-  "sha256": "2db239f006c6fd06fd3f29756dbd375b64d36bcad2269dbc98be80bf1219f75a",
-  "size": 4018176000,
+  "published_at": "2026-11-17T12:30:00Z",
+  "summary": "NanoOS Gaming 1.1 is available.",
+  "download_url": "https://download.nanoosproject.org/nanoos-gaming-2026.11.17-x86_64.iso",
+  "sha256": "27dce4f26b9ee2b0dd951639bccdc2b91c0090cb7924b31124cd6c8aa433d0ca",
+  "size": 2776662016,
   "mirror_url": "https://github.com/falconediz911-stack/NanoRepo/releases/tag/iso-release"
 }
